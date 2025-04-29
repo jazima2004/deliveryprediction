@@ -5,10 +5,10 @@ import numpy as np
 
 # Load the pre-trained model
 try:
-    with open('model1.pkl', 'rb') as file:
+    with open('MODEL.pkl', 'rb') as file:
         model = pickle.load(file)
 except FileNotFoundError:
-    st.error("Model file 'model1.pkl' not found. Please ensure it is in the same directory as app.py.")
+    st.error("Model file 'MODEL.pkl' not found. Please ensure it is in the same directory as app.py.")
     st.stop()
 
 # Streamlit app title
